@@ -1,11 +1,15 @@
 import React from "react";
+import Image from "next/image";
+import HeroImg from "../../img/HeroImg.png";
 
 const Hero = () => {
   return (
-    <div>
-      <p className="font-bold text-3xl text-red"></p>
-      <p className="font-bold text-3xl text-red">Hello</p>
-    </div>
+    <section>
+      <div className="">
+        <Image src={HeroImg} className="" />
+      </div>
+
+    </section>
   );
 };
 
