@@ -2,7 +2,13 @@ import Head from "next/head";
 import Hero from "../components/hero/Hero";
 import SneakerCard from "../components/populares/SneakerCard";
 
-// Imagenes importadas 
+// Tipografia de google fonts usando next/font 
+import { Outfit } from "@next/font/google"
+const outfit = Outfit ({
+  subsets : ['latin'],
+})
+
+// Imagenes importadas de la sección sneakers populares
 import img1 from "../public/img/blazer.png"
 import img2 from "../public/img/converse.png"
 import img3 from "../public/img/jordan.png"
@@ -21,7 +27,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+
+      <main className={outfit.className}>
         <Hero />
 
         {/* Sneakers populares  */}
