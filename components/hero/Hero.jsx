@@ -5,6 +5,7 @@ const Hero = () => {
     <div>
       <p className="font-bold text-3xl text-red"></p>
       <p className="font-bold text-3xl text-red">Hello</p>
+      <p>lol</p>
     </div>
   );
 };
