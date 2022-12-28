@@ -2,7 +2,6 @@ import React from "react";
 import { BsList } from "react-icons/bs";
 import Image from "next/image";
 import Logo from "/img/Logo.png";
-import HeroImg from "../img/HeroImg.png";
 
 const Navbar = () => {
   return (
