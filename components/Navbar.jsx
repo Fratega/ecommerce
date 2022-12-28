@@ -1,22 +1,22 @@
 import React from "react";
 import { BsList } from "react-icons/bs";
 import Image from "next/image";
-import Logo from "/img/Logo.png";
+import Logo from "/Public/img/Logo.png";
 
 const Navbar = () => {
   return (
-    <main className="bg-white px-10 ">
-        <nav className="py-10 mb-12 flex justify-between">
-          <div className="">
-            <Image src={Logo} width={50} height={50} />
+    <header className="px-[1rem]">
+        <nav className="py-10 mb-12 flex justify-between ">
+          <div className="w-[4rem]">
+            <Image src={Logo} alt=""/>
           </div>
-          <ul className="flex items-center">
+          <ul className="flex items-center md:hidden">
             <li>
-              <BsList className="cursor-pointer text-4xl " />
+              <BsList className="cursor-pointer text-[3rem] " />
             </li>
           </ul>
         </nav>
-    </main>
+    </header>
   );
 }
 
