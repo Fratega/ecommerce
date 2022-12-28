@@ -1,22 +1,23 @@
 import Head from "next/head";
+import Navbar from "../components/header/Navbar";
 import Hero from "../components/hero/Hero";
 import SneakerCard from "../components/populares/SneakerCard";
 
-// Tipografia de google fonts usando next/font 
-import { Outfit } from "@next/font/google"
-const outfit = Outfit ({
-  subsets : ['latin'],
-})
+// Tipografia de google fonts usando next/font
+import { Outfit } from "@next/font/google";
+const outfit = Outfit({
+  subsets: ["latin"],
+});
 
 // Imagenes importadas de la sección sneakers populares
-import img1 from "../public/img/blazer.png"
-import img2 from "../public/img/converse.png"
-import img3 from "../public/img/jordan.png"
-import img4 from "../public/img/jordan2.png"
-import img5 from "../public/img/jordan3.png"
-import img6 from "../public/img/nike.png"
-import img7 from "../public/img/nikeciaga.png"
-import img8 from "../public/img/yeezy.png"
+import img1 from "../public/img/blazer.png";
+import img2 from "../public/img/converse.png";
+import img3 from "../public/img/jordan.png";
+import img4 from "../public/img/jordan2.png";
+import img5 from "../public/img/jordan3.png";
+import img6 from "../public/img/nike.png";
+import img7 from "../public/img/nikeciaga.png";
+import img8 from "../public/img/yeezy.png";
 
 export default function Home() {
   return (
@@ -28,12 +29,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* Sección de navbar  */}
+      <Navbar />
+
+      {/* Main  */}
       <main className={outfit.className}>
         <Hero />
+        {/* ------------------ Continua acá  --------------------- */}
 
         {/* Sneakers populares  */}
         <section>
-
           {/* Titulo  */}
           <div className="w-11/12 mx-auto text-center my-8">
             <h2 className="font-bold text-3xl">Sneakers populares</h2>
@@ -43,7 +48,7 @@ export default function Home() {
             </p>
           </div>
 
-            {/* Grid  */}
+          {/* Grid  */}
           <div className="w-11/12 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5 gap-y-10 md:w-[50%] lg:w-[80%] lg:gap-x-10 2xl:gap-y-16">
             <SneakerCard img={img1} titulo="Nike blazers" precio="$58.99" />
             <SneakerCard img={img2} titulo="Converse All-star" precio="$35" />
@@ -51,7 +56,11 @@ export default function Home() {
             <SneakerCard img={img4} titulo="Jordan 7" precio="$55" />
             <SneakerCard img={img5} titulo="Jordan 13" precio="$55" />
             <SneakerCard img={img6} titulo="Nike air 12" precio="$44.99" />
-            <SneakerCard img={img7} titulo="NIKE x Balenciaga" precio="$149.99" />
+            <SneakerCard
+              img={img7}
+              titulo="NIKE x Balenciaga"
+              precio="$149.99"
+            />
             <SneakerCard img={img8} titulo="Yeezy 350z" precio="$99.99" />
           </div>
         </section>
