@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../components/header/Navbar'
 import Hero from '../components/hero/Hero'
 
 export default function Home() {
@@ -10,8 +11,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Navbar />
+
       <main>
         <Hero />
+        {/* Siguientes componentes de la página principal  */}
       </main>
     </>
   )
