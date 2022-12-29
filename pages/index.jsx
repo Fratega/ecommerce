@@ -29,13 +29,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* Sección de navbar  */}
-      <Navbar />
-
       {/* Main  */}
       <main className={outfit.className}>
+        <Navbar />
         <Hero />
-        {/* ------------------ Continua acá  --------------------- */}
 
         {/* Sneakers populares  */}
         <section>
