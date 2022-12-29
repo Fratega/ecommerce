@@ -38,8 +38,8 @@ export default function Home() {
         <section>
           {/* Titulo  */}
           <div className="w-11/12 mx-auto text-center my-8">
-            <h2 className="font-bold text-3xl">Sneakers populares</h2>
-            <p className="text-slate-400">
+            <h2 className="font-bold text-4xl lg:text-5xl">Sneakers populares</h2>
+            <p className="text-neutral-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptate, perferendis.
             </p>
