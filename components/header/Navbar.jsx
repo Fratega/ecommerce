@@ -18,7 +18,7 @@ const Navbar = () => {
         <Link href="/">Contacto</Link>
         <Link href="/categorias">Categorías</Link>
       </nav>
-      <div className="hidden md:flex gap-3.5 text-3xl">
+      <div className="hidden md:flex gap-3.5 text-2xl">
         <ImSearch/>
         <MdShoppingCart/>
       </div>

@@ -1,37 +1,38 @@
 import React from "react";
 import Image from "next/image";
-import Jordans from "../../Public/img/Jordans.png";
-import Button from "../Button/Button";
+import img from "../../public/img/jordan_hero.jpg"
+import Button from "../button/Button";
 
 const Hero = () => {
   return (
-    <section className="">
+    <section>
       {/* Image and text container */}
-      <div className="flex flex-col w-[90%] h-[70vh] relative mx-auto items-center justify-center lg:h-[85vh]">
+      <div className="flex flex-col w-[90%] h-[70vh] relative mx-auto items-center justify-center md:h-[50rem] lg:h-[85vh]">
         <Image
-          src={Jordans}
+          src={img}
           alt=""
-          className="object-cover rounded-2xl -z-10"
           fill
+          className="object-cover rounded-2xl -z-10"
         />
         {/* Image Text */}
-        <div className="flex flex-col z-10 text-white gap-5">
-          <h1 className="text-center "> Clásicos </h1>
-          <h2 className="text-center text-5xl font-bold uppercase md:text-8xl">
+        <div className="flex flex-col items-center z-10 text-white gap-5">
+          <h2 className="text-center "> Clásicos </h2>
+          <h1 className="text-center text-6xl font-bold uppercase md:text-8xl 2xl:text-9xl">
             Jordan 1
-          </h2>
+          </h1>
           {/* Image button(Extern Component) */}
           <Button />
         </div>
+
         {/* Description of the image */}
-        <div className="hidden md:flex flex-col w-[30vh] text-white absolute bottom-[3rem] right-[3rem]">
-          <h1 className="font-bold uppercase ">Description</h1>
+        <div className="hidden md:flex  flex-col w-[30vh] text-white absolute bottom-[3rem] right-[3rem]">
+          <h3 className="font-bold uppercase ">Description</h3>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </div>
       </div>
       {/* Image Description(Responsive) */}
-      <div className="px-[1.5rem] md:hidden">
-        <h1 className="font-bold uppercase">Description</h1>
+      <div className="w-[90%] mx-auto mt-6 md:hidden">
+        <h3 className="font-bold text-2xl">Description</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit minus,
           voluptas iste quaerat dicta, fuga ratione accusamus officia deleniti

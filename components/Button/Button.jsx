@@ -1,14 +1,14 @@
 import React from "react";
-import Link from "next/link"
+import Link from "next/link";
 
 const Button = () => {
-    return (
-        <div>
-            <div className="bg-black w-max mx-auto p-4 rounded-xl px-14 border-2 border-white ">
-            <Link href="/">Óbtenlas ya</Link>{" "}
-          </div>
-        </div>
-    )
+  return (
+    <Link href="/">
+      <button className="bg-black py-4 px-14 rounded-xl border border-white">
+        Obtenlas ya
+      </button>
+    </Link>
+  );
 };
 
 export default Button;
