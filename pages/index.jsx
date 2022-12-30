@@ -46,7 +46,7 @@ export default function Home() {
           </div>
 
           {/* Grid  */}
-          <div className="w-11/12 mx-auto grid grid-cols-2 lg:grid-cols-4 gap-5 gap-y-10 md:w-[50%] lg:w-[80%] lg:gap-x-10 2xl:gap-y-16">
+          <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10  lg:w-[80%] lg:gap-x-10 2xl:gap-y-16">
             <SneakerCard img={img1} titulo="Nike blazers" precio="$58.99" />
             <SneakerCard img={img2} titulo="Converse All-star" precio="$35" />
             <SneakerCard img={img3} titulo="Jordan 1" precio="$65" />

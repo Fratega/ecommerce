@@ -10,10 +10,10 @@ const Cat_item = ({titulo, img1, img2, img3, img4}) => {
       </h2>
 
       {/* Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 lg:mx-auto lg:w-[90%]">
         {/* Foto principal  */}
         <div className="relative w-full h-[15rem] col-span-2 md:col-span-3 md:h-[20rem] lg:h-[35rem] 2xl:h-[58rem] ">
-          <Image src={img1} alt="" fill className="rounded-xl object-cover object-center" />
+          <Image src={img1} alt="" priority placeholder="blur" fill className="rounded-xl object-cover object-center" />
         </div>
 
         <div className="relative w-full h-[15rem] md:h-[18rem] lg:h-[24rem] 2xl:h-[33rem] ">
@@ -21,6 +21,7 @@ const Cat_item = ({titulo, img1, img2, img3, img4}) => {
             src={img2}
             alt=""
             fill
+            placeholder="blur"
             className="rounded-xl object-cover object-center"
           />
         </div>
@@ -30,6 +31,7 @@ const Cat_item = ({titulo, img1, img2, img3, img4}) => {
             src={img3}
             alt=""
             fill
+            placeholder="blur"
             className="rounded-xl object-cover object-center"
           />
         </div>
@@ -39,6 +41,7 @@ const Cat_item = ({titulo, img1, img2, img3, img4}) => {
             src={img4}
             alt=""
             fill
+            placeholder="blur"
             className="rounded-xl object-cover object-center"
           />
         </div>
