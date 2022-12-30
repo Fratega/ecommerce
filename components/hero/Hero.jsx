@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img from "../../public/img/jordan_hero.jpg"
+import img from "../../public/img/jordan1.jpg";
 import Button from "../button/Button";
 
 const Hero = () => {
@@ -11,9 +11,12 @@ const Hero = () => {
         <Image
           src={img}
           alt=""
+          placeholder="blur"
+          priority
           fill
-          className="object-cover rounded-2xl -z-10"
+          className="object-cover rounded-2xl -z-10 brightness-[.5]"
         />
+
         {/* Image Text */}
         <div className="flex flex-col items-center z-10 text-white gap-5">
           <h2 className="text-center "> Clásicos </h2>
