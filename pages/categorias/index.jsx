@@ -52,7 +52,7 @@ const Categorias = () => {
       </Head>
 
       <Navbar />
-      <main className={`${outfit.className} mt-10`}>
+      <main className="mt-10">
         <Cat_item
           titulo="Yeezy"
           img1={yeezy}
