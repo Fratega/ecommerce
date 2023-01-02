@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const Cat_item = ({titulo, img1, img2, img3, img4}) => {
+const Cat_item = ({titulo, img1, img2, img3, img4, link}) => {
   return (
     <section className="w-11/12 mx-auto mb-[5rem] lg:mb-[7rem]">
       <h2 className="font-bold uppercase text-6xl md:text-8xl lg:text-9xl">
@@ -49,7 +49,7 @@ const Cat_item = ({titulo, img1, img2, img3, img4}) => {
 
         {/* Ver más  */}
       <div className="w-max ml-auto mt-5">
-        <Link href="/">
+        <Link href={link}>
           <button className="border border-black py-4 px-16 rounded-full text-xl lg:text-2xl lg:px-28 transition-colors hover:bg-black hover:text-white">
             Ver más
           </button>

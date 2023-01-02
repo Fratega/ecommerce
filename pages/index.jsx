@@ -15,15 +15,7 @@ import {
   yeezy1,
 } from "../components/populares/data";
 
-// Imagenes importadas de la sección sneakers populares
-import img1 from "../public/img/blazer.png";
-import img2 from "../public/img/converse.png";
-import img3 from "../public/img/jordan.png";
-import img4 from "../public/img/jordan2.png";
-import img5 from "../public/img/jordan3.png";
-import img6 from "../public/img/nike.png";
-import img7 from "../public/img/nikeciaga.png";
-import img8 from "../public/img/yeezy.png";
+
 import HotDot from "../components/populares/HotDot";
 
 export default function Home() {
