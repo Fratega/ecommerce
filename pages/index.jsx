@@ -15,8 +15,6 @@ import {
   yeezy1,
 } from "../components/populares/data";
 
-
-
 // Imagenes importadas de la sección sneakers populares
 import img1 from "../public/img/blazer.png";
 import img2 from "../public/img/converse.png";
@@ -26,6 +24,7 @@ import img5 from "../public/img/jordan3.png";
 import img6 from "../public/img/nike.png";
 import img7 from "../public/img/nikeciaga.png";
 import img8 from "../public/img/yeezy.png";
+import HotDot from "../components/populares/HotDot";
 
 export default function Home() {
   return (
@@ -57,21 +56,31 @@ export default function Home() {
 
           {/* Grid  */}
           <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10  lg:w-[80%] lg:gap-x-10 2xl:gap-y-16">
-            <SneakerCard
-              img={nike1.img}
-              titulo={nike1.nombre}
-              precio={`$${nike1.precio}`}
-            />
+            <div className="relative">
+              <SneakerCard
+                img={nike1.img}
+                titulo={nike1.nombre}
+                precio={`$${nike1.precio}`}
+              />
+              <div className="absolute -top-[1rem] -right-[1rem]">
+                <HotDot />
+              </div>
+            </div>
             <SneakerCard
               img={converse1.img}
               titulo={converse1.nombre}
               precio={`$${converse1.precio}`}
             />
-            <SneakerCard
-              img={jordan1.img}
-              titulo={jordan1.nombre}
-              precio={`$${jordan1.precio}`}
-            />
+            <div className="relative">
+              <SneakerCard
+                img={jordan1.img}
+                titulo={jordan1.nombre}
+                precio={`$${jordan1.precio}`}
+              />
+              <div className="absolute -top-[1rem] -right-[1rem]">
+                <HotDot />
+              </div>
+            </div>
             <SneakerCard
               img={jordan2.img}
               titulo={jordan2.nombre}
@@ -92,11 +101,17 @@ export default function Home() {
               titulo={nike3.nombre}
               precio={`$${nike3.precio}`}
             />
-            <SneakerCard
-              img={yeezy1.img}
-              titulo={yeezy1.nombre}
-              precio={`$${yeezy1.precio}`}
-            />
+            <div className="relative">
+              <SneakerCard
+                img={yeezy1.img}
+                titulo={yeezy1.nombre}
+                precio={`$${yeezy1.precio}`}
+              />
+
+              <div className="absolute -top-[1rem] -right-[1rem]">
+                <HotDot />
+              </div>
+            </div>
           </div>
         </section>
       </main>
