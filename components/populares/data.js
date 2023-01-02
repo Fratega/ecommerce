@@ -1,11 +1,11 @@
-import nike_img_1 from "../../public/img/blazer.png"
-import nike_img_2 from "../../public/img/nike.png"
-import nike_img_3 from "../../public/img/nikeciaga.png"
-import converse_img_1 from "../../public/img/converse.png"
-import jordan_img_1 from "../../public/img/jordan.png"
-import jordan_img_2 from "../../public/img/jordan2.png"
-import jordan_img_3 from "../../public/img/jordan3.png"
-import yeezy_img_1 from "../../public/img/yeezy.png"
+import nike_img_1 from "../../public/img/nike/blazer.png"
+import nike_img_2 from "../../public/img/nike/nike.png"
+import nike_img_3 from "../../public/img/nike/nikeciaga.png"
+import converse_img_1 from "../../public/img/converse/converse.png"
+import jordan_img_1 from "../../public/img/jordan/jordan.png"
+import jordan_img_2 from "../../public/img/jordan/jordan2.png"
+import jordan_img_3 from "../../public/img/jordan/jordan3.png"
+import yeezy_img_1 from "../../public/img/yeezy/yeezy.png"
 
 export const nike1 = {
     nombre : "Nike Blazers",
