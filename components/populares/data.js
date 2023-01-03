@@ -9,6 +9,17 @@ import nike_img_8 from "../../public/img/nike/nike8.webp"
 import nike_img_9 from "../../public/img/nike/nike 9.webp"
 import nike_img_10 from "../../public/img/nike/nike10.webp"
 
+import fila_img_1 from "../../public/img/fila/fila1.webp"
+import fila_img_2 from "../../public/img/fila/fila2.webp"
+import fila_img_3 from "../../public/img/fila/fila3.webp"
+import fila_img_4 from "../../public/img/fila/fila4.webp"
+import fila_img_5 from "../../public/img/fila/fila5.webp"
+import fila_img_6 from "../../public/img/fila/fila6.webp"
+import fila_img_7 from "../../public/img/fila/fila7.webp"
+import fila_img_8 from "../../public/img/fila/fila8.webp"
+import fila_img_9 from "../../public/img/fila/fila9.webp"
+import fila_img_10 from "../../public/img/fila/fila10.webp"
+
 import converse_img_1 from "../../public/img/converse/converse.png"
 
 import jordan_img_1 from "../../public/img/jordan/jordan.png"
@@ -82,6 +93,66 @@ export const nike10 = {
     nombre : "Nike x Balenciaga",
     precio : 149.99,
     img: nike_img_10
+}
+
+export const fila1 = {
+    nombre : "Fila 1",
+    precio : 20,
+    img : fila_img_1
+}
+
+export const fila2 = {
+    nombre : "Fila 2",
+    precio : 30,
+    img : fila_img_2
+}
+
+export const fila3 = {
+    nombre : "Fila 3",
+    precio : 40,
+    img : fila_img_3
+}
+
+export const fila4 = {
+    nombre : "Fila 4",
+    precio : 50,
+    img : fila_img_4
+}
+
+export const fila5 = {
+    nombre : "Fila 5",
+    precio : 60,
+    img : fila_img_5
+}
+
+export const fila6 = {
+    nombre : "Fila 6",
+    precio : 70,
+    img : fila_img_6
+}
+
+export const fila7 = {
+    nombre : "Fila 7",
+    precio : 80,
+    img : fila_img_7
+}
+
+export const fila8 = {
+    nombre : "Fila 8",
+    precio : 90,
+    img : fila_img_8
+}
+
+export const fila9 = {
+    nombre : "Fila 9",
+    precio : 100,
+    img : fila_img_9
+}
+
+export const fila10 = {
+    nombre : "Fila 10",
+    precio : 110,
+    img : fila_img_10
 }
 
 export const converse1 = {
