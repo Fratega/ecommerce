@@ -10,9 +10,18 @@ import nike_img_9 from "../../public/img/nike/nike 9.webp"
 import nike_img_10 from "../../public/img/nike/nike10.webp"
 
 import converse_img_1 from "../../public/img/converse/converse.png"
+
 import jordan_img_1 from "../../public/img/jordan/jordan.png"
 import jordan_img_2 from "../../public/img/jordan/jordan2.png"
 import jordan_img_3 from "../../public/img/jordan/jordan3.png"
+import jordan_img_4 from "../../public/img/jordan/jordan4.webp"
+import jordan_img_5 from "../../public/img/jordan/jordan5.webp"
+import jordan_img_6 from "../../public/img/jordan/jordan6.webp"
+import jordan_img_7 from "../../public/img/jordan/jordan7.webp"
+import jordan_img_8 from "../../public/img/jordan/jordan8.webp"
+import jordan_img_9 from "../../public/img/jordan/jordan9.webp"
+import jordan_img_10 from "../../public/img/jordan/jordan10.webp"
+
 import yeezy_img_1 from "../../public/img/yeezy/yeezy.png"
 
 export const nike1 = {
@@ -45,13 +54,11 @@ export const nike5 = {
     img: nike_img_5
 }
 
-
 export const nike6 = {
     nombre : "Nike 4",
     precio : 60,
     img: nike_img_6
 }
-
 
 export const nike7 = {
     nombre : "Nike 5",
@@ -59,13 +66,11 @@ export const nike7 = {
     img: nike_img_7
 }
 
-
 export const nike8 = {
     nombre : "Nike x Balenciaga",
     precio : 149.99,
     img: nike_img_8
 }
-
 
 export const nike9 = {
     nombre : "Nike x Balenciaga",
@@ -73,13 +78,11 @@ export const nike9 = {
     img: nike_img_9
 }
 
-
 export const nike10 = {
     nombre : "Nike x Balenciaga",
     precio : 149.99,
     img: nike_img_10
 }
-
 
 export const converse1 = {
     nombre : "Converse All-star",
@@ -103,6 +106,48 @@ export const jordan3 = {
     nombre : "Jordan 13",
     precio : 55,
     img: jordan_img_3
+}
+
+export const jordan4 = {
+    nombre : "Jordan 3",
+    precio : 55,
+    img: jordan_img_4
+}
+
+export const jordan5 = {
+    nombre : "Jordan 4",
+    precio : 65,
+    img: jordan_img_5
+}
+
+export const jordan6 = {
+    nombre : "Jordan 5",
+    precio : 75,
+    img: jordan_img_6
+}
+
+export const jordan7 = {
+    nombre : "Jordan 6",
+    precio : 85,
+    img: jordan_img_7
+}
+
+export const jordan8 = {
+    nombre : "Jordan 7",
+    precio : 95,
+    img: jordan_img_8
+}
+
+export const jordan9 = {
+    nombre : "Jordan 8",
+    precio : 100,
+    img: jordan_img_9
+}
+
+export const jordan10 = {
+    nombre : "Jordan 9",
+    precio : 110,
+    img: jordan_img_10
 }
 
 export const yeezy1 = {
