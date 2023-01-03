@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../../Public/img/Logo.png";
+import Logo from "../../public/img/Logo.png";
 import { FiAlignJustify } from "react-icons/fi";
 import { ImSearch } from "react-icons/im";
 import { MdShoppingCart } from "react-icons/md";
