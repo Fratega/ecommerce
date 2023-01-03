@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 import GridItem from "./GridItem";
 import jordan from "../../public/img/cat-jordan/jordan.webp"
-import nike from "../../Public/img/cat-nike/nike 3.webp"
-import adidas from "../../Public/img/cat-adidas/adidas.webp"
-import yeezy from "../../Public/img/cat-yeezy/yeezy.jpg"
-import converse from "../../Public/img/cat-converse/converse.jpg"
-import fila from "../../Public/img/cat-fila/fila.jpg"
+import nike from "../../public/img/cat-nike/nike 3.webp"
+import adidas from "../../public/img/cat-adidas/adidas.webp"
+import yeezy from "../../public/img/cat-yeezy/yeezy.jpg"
+import converse from "../../public/img/cat-converse/converse.jpg"
+import fila from "../../public/img/cat-fila/fila.jpg"
 
 const Grid = () => {
   return (
