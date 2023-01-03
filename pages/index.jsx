@@ -52,9 +52,9 @@ export default function Home() {
             img4={converse}
             img5={yeezy}
             img6={fila}
-            link="/"
           />
         </section>
+
         {/* Sneakers populares  */}
         <section>
           {/* Titulo  */}
