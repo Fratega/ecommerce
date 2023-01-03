@@ -34,6 +34,11 @@ import jordan_img_9 from "../../public/img/jordan/jordan9.webp"
 import jordan_img_10 from "../../public/img/jordan/jordan10.webp"
 
 import yeezy_img_1 from "../../public/img/yeezy/yeezy.png"
+import yeezy_img_2 from "../../public/img/yeezy/yeezy1.webp"
+import yeezy_img_3 from "../../public/img/yeezy/yeezy2.webp"
+import yeezy_img_4 from "../../public/img/yeezy/yeezy3.webp"
+import yeezy_img_5 from "../../public/img/yeezy/yeezy4.webp"
+import yeezy_img_6 from "../../public/img/yeezy/yeezy5.webp"
 
 export const nike1 = {
     nombre : "Nike Blazers",
@@ -226,5 +231,32 @@ export const yeezy1 = {
     precio : 99.99,
     img: yeezy_img_1
 }
+
+export const yeezy2 = {
+    nombre : "Yeezy 2",
+    precio : 150,
+    img: yeezy_img_2
+}
+
+export const yeezy3 = {
+    nombre : "Yeezy 3",
+    precio : 160,
+    img: yeezy_img_3
+}
+
+
+export const yeezy4 = {
+    nombre : "Yeezy 4",
+    precio : 200,
+    img: yeezy_img_4
+}
+
+
+export const yeezy5 = {
+    nombre : "Yeezy 5",
+    precio : 300,
+    img: yeezy_img_5
+}
+
 
 
