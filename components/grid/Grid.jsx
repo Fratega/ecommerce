@@ -1,27 +1,19 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import GridItem from "./GridItem";
+import jordan from "../../public/img/cat-jordan/jordan.webp"
 
-const Grid = ({ img1 }) => {
+const Grid = () => {
   return (
-    <section className="w-11/12 mx-auto mt-[2rem] ">
-      {/* Contenedor Grid */}
-      <div className="relative">
-        <div className="relative w-full h-[8rem] md:h-[18rem] lg:h-[24rem] 2xl:h-[28rem] ">
-          <Image
-            src={img1}
-            alt=""
-            fill
-            className="brightness-50 rounded-xl object-cover object-center"
-          />
-          <div className="absolute bottom-4 right-4 w-max ml-auto mt-5">
-            <Link href="/">
-              <button className="border border-white bg-white text-black py-2 px-4 rounded-full text-md lg:text-2xl lg:px-28 transition-colors hover:bg-black hover:text-white">
-                Ver más
-              </button>
-            </Link>
-          </div>
-        </div>
+    <section>
+      {/* Grid contenedor  */}
+      <div className="w-11/12 mx-auto gap-4 grid grid-cols-1 md:grid-cols-2">
+        <GridItem foto={jordan} nombre="Jordan" direccion="/categorias/jordan" />
+        <GridItem foto={jordan} nombre="Jordan" direccion="/categorias/jordan" />
+        <GridItem foto={jordan} nombre="Jordan" direccion="/categorias/jordan" />
+        <GridItem foto={jordan} nombre="Jordan" direccion="/categorias/jordan" />
+        <GridItem foto={jordan} nombre="Jordan" direccion="/categorias/jordan" />
+        <GridItem foto={jordan} nombre="Jordan" direccion="/categorias/jordan" />
       </div>
     </section>
   );

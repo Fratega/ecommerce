@@ -4,18 +4,6 @@ import Hero from "../components/hero/Hero";
 import SneakerCard from "../components/populares/SneakerCard";
 import Grid from "../components/grid/Grid";
 
-// Jordan pics
-import jordan from "../Public/img/cat-jordan/jordan.webp";
-// Nike pics
-import nike from "../Public/img/cat-nike/nike 3.webp";
-// Adidas pics
-import adidas from "../Public/img/cat-adidas/adidas.webp";
-// Converse pics
-import converse from "../Public/img/cat-converse/converse.jpg";
-// Yeezy pics
-import yeezy from "../Public/img/cat-yeezy/yeezy.jpg";
-// Fila pics
-import fila from "../Public/img/cat-fila/fila.jpg";
 // Importando datos de los zapatos
 import {
   nike1,
@@ -43,15 +31,8 @@ export default function Home() {
       <main>
         <Navbar />
         <Hero />
-        {/* Grid de Secciones de Zapatos */}
-        <div className="md:grid grid-cols-2 md:mx-12 ">
-          <Grid img1={jordan} link="./categorias/jordan.jsx" />
-          <Grid img1={nike} link="./categorias/nike" />
-          <Grid img1={adidas} link="./categorias/adidas" />
-          <Grid img1={converse} link="./categorias/converse" />
-          <Grid img1={yeezy} link="./categorias/yeezy" />
-          <Grid img1={fila} link="./categorias/fila" />
-        </div>
+        <Grid />
+
         {/* Sneakers populares  */}
         <section>
           {/* Titulo  */}
