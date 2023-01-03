@@ -2,8 +2,21 @@ import Head from "next/head";
 import Navbar from "../components/header/Navbar";
 import Hero from "../components/hero/Hero";
 import SneakerCard from "../components/populares/SneakerCard";
-
-// Importanto datos de los zapatos
+import Grid from "../components/grid/Grid";
+import Image from "next/image";
+// Jordan pics
+import jordan from "../Public/img/cat-jordan/jordan.webp";
+// Nike pics
+import nike from "../Public/img/cat-nike/nike 3.webp";
+// Adidas pics
+import adidas from "../Public/img/cat-adidas/adidas.webp";
+// Converse pics
+import converse from "../Public/img/cat-converse/converse.jpg";
+// Yeezy pics
+import yeezy from "../Public/img/cat-yeezy/yeezy.jpg";
+// Fila pics
+import fila from "../Public/img/cat-fila/fila.jpg";
+// Importando datos de los zapatos
 import {
   nike1,
   nike2,
@@ -14,7 +27,6 @@ import {
   jordan3,
   yeezy1,
 } from "../components/populares/data";
-
 
 import HotDot from "../components/populares/HotDot";
 
@@ -27,12 +39,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       {/* Main  */}
       <main>
         <Navbar />
         <Hero />
-
+        {/* Grid de Secciones de Zapatos */}
+        <section>
+          <Grid
+            img1={jordan}
+            img2={nike}
+            img3={adidas}
+            img4={converse}
+            img5={yeezy}
+            img6={fila}
+            link="/"
+          />
+        </section>
         {/* Sneakers populares  */}
         <section>
           {/* Titulo  */}
@@ -46,7 +68,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Grid  */}
+          {/* Grid de Sneakers Populares */}
           <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10  lg:w-[80%] lg:gap-x-10 2xl:gap-y-16">
             <div className="relative">
               <SneakerCard
