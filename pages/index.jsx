@@ -2,8 +2,9 @@ import Head from "next/head";
 import Navbar from "../components/header/Navbar";
 import Hero from "../components/hero/Hero";
 import SneakerCard from "../components/populares/SneakerCard";
+import Grid from "../components/grid/Grid";
 
-// Importanto datos de los zapatos
+// Importando datos de los zapatos
 import {
   nike1,
   nike2,
@@ -14,7 +15,6 @@ import {
   jordan3,
   yeezy1,
 } from "../components/populares/data";
-
 
 import HotDot from "../components/populares/HotDot";
 
@@ -27,11 +27,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       {/* Main  */}
       <main>
         <Navbar />
         <Hero />
+        <Grid />
 
         {/* Sneakers populares  */}
         <section>
@@ -46,7 +46,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Grid  */}
+          {/* Grid de Sneakers Populares */}
           <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10  lg:w-[80%] lg:gap-x-10 2xl:gap-y-16">
             <div className="relative">
               <SneakerCard
