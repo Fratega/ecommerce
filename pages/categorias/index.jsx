@@ -59,7 +59,7 @@ const Categorias = () => {
           img2={yeezy2}
           img3={yeezy3}
           img4={yeezy4}
-          link="/categorias/yeezy"
+          direccion="/categorias/yeezy"
         />
 
         <Cat_item
@@ -68,7 +68,7 @@ const Categorias = () => {
           img2={jordan2}
           img3={jordan3}
           img4={jordan4}
-          link="/categorias/jordan"
+          direccion="/categorias/jordan"
         />
 
         <Cat_item
@@ -77,7 +77,7 @@ const Categorias = () => {
           img2={fila2}
           img3={fila3}
           img4={fila4}
-          link="/categorias/fila"
+          direccion="/categorias/fila"
         />
 
         <Cat_item
@@ -86,7 +86,7 @@ const Categorias = () => {
           img2={nike2}
           img3={nike3}
           img4={nike4}
-          link="/categorias/nike"
+          direccion="/categorias/nike"
         />
 
         <Cat_item
@@ -95,7 +95,7 @@ const Categorias = () => {
           img2={adidas2}
           img3={adidas3}
           img4={adidas4}
-          link="/categorias/adidas"
+          direccion="/categorias/adidas"
         />
 
         <Cat_item
@@ -104,7 +104,7 @@ const Categorias = () => {
           img2={converse2}
           img3={converse3}
           img4={converse4}
-          link="/categorias/converse"
+          direccion="/categorias/converse"
         />
       </main>
     </>
