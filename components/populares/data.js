@@ -32,6 +32,14 @@ import adidas_img_9 from "../../public/img/adidas/adidas9.webp"
 import adidas_img_10 from "../../public/img/adidas/adidas10.webp"
 
 import converse_img_1 from "../../public/img/converse/converse.png"
+import converse_img_2 from "../../public/img/converse/converse2.webp"
+import converse_img_3 from "../../public/img/converse/converse3.webp"
+import converse_img_4 from "../../public/img/converse/converse4.webp"
+import converse_img_5 from "../../public/img/converse/converse5.webp"
+import converse_img_6 from "../../public/img/converse/converse6.webp"
+import converse_img_7 from "../../public/img/converse/converse7.webp"
+import converse_img_8 from "../../public/img/converse/converse8.webp"
+import converse_img_9 from "../../public/img/converse/converse9.webp"
 
 import jordan_img_1 from "../../public/img/jordan/jordan.png"
 import jordan_img_2 from "../../public/img/jordan/jordan2.png"
@@ -238,6 +246,54 @@ export const converse1 = {
     nombre : "Converse All-star",
     precio : 35,
     img: converse_img_1
+}
+
+export const converse2 = {
+    nombre : "Converse 2",
+    precio : 50,
+    img: converse_img_2
+}
+
+export const converse3 = {
+    nombre : "Converse 3",
+    precio : 60,
+    img: converse_img_3
+}
+
+export const converse4 = {
+    nombre : "Converse 4",
+    precio : 70,
+    img: converse_img_4
+}
+
+export const converse5 = {
+    nombre : "Converse 5",
+    precio : 50,
+    img: converse_img_5
+}
+
+export const converse6 = {
+    nombre : "Converse 6",
+    precio : 90,
+    img: converse_img_6
+}
+
+export const converse7 = {
+    nombre : "Converse 7",
+    precio : 100,
+    img: converse_img_7
+}
+
+export const converse8 = {
+    nombre : "Converse 8",
+    precio : 120,
+    img: converse_img_8
+}
+
+export const converse9 = {
+    nombre : "Converse 9",
+    precio : 80,
+    img: converse_img_9
 }
 
 export const jordan1 = {
