@@ -20,6 +20,17 @@ import fila_img_8 from "../../public/img/fila/fila8.webp"
 import fila_img_9 from "../../public/img/fila/fila9.webp"
 import fila_img_10 from "../../public/img/fila/fila10.webp"
 
+import adidas_img_1 from "../../public/img/adidas/adidas1.webp"
+import adidas_img_2 from "../../public/img/adidas/adidas2.webp"
+import adidas_img_3 from "../../public/img/adidas/adidas3.webp"
+import adidas_img_4 from "../../public/img/adidas/adidas4.webp"
+import adidas_img_5 from "../../public/img/adidas/adidas5.webp"
+import adidas_img_6 from "../../public/img/adidas/adidas6.webp"
+import adidas_img_7 from "../../public/img/adidas/adidas7.webp"
+import adidas_img_8 from "../../public/img/adidas/adidas8.webp"
+import adidas_img_9 from "../../public/img/adidas/adidas9.webp"
+import adidas_img_10 from "../../public/img/adidas/adidas10.webp"
+
 import converse_img_1 from "../../public/img/converse/converse.png"
 
 import jordan_img_1 from "../../public/img/jordan/jordan.png"
@@ -98,6 +109,69 @@ export const nike10 = {
     nombre : "Nike x Balenciaga",
     precio : 149.99,
     img: nike_img_10
+}
+
+export const adidas1 = {
+    nombre: "Adidas 1",
+    precio: 100,
+    img: adidas_img_1
+}
+
+
+export const adidas2 = {
+    nombre: "Adidas 2",
+    precio: 110,
+    img: adidas_img_2
+}
+
+
+export const adidas3 = {
+    nombre: "Adidas 3",
+    precio: 120,
+    img: adidas_img_3
+}
+
+export const adidas4 = {
+    nombre: "Adidas 4",
+    precio: 130,
+    img: adidas_img_4
+}
+
+
+export const adidas5 = {
+    nombre: "Adidas 5",
+    precio: 140,
+    img: adidas_img_5
+}
+
+export const adidas6 = {
+    nombre: "Adidas 6",
+    precio: 150,
+    img: adidas_img_6
+}
+
+export const adidas7 = {
+    nombre: "Adidas 7",
+    precio: 160,
+    img: adidas_img_7
+}
+
+export const adidas8 = {
+    nombre: "Adidas 8",
+    precio: 170,
+    img: adidas_img_8
+}
+
+export const adidas9 = {
+    nombre: "Adidas 9",
+    precio: 120,
+    img: adidas_img_9
+}
+
+export const adidas10 = {
+    nombre: "Adidas 10",
+    precio: 80,
+    img: adidas_img_10
 }
 
 export const fila1 = {
