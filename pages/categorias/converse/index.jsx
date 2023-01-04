@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Navbar from "../../components/header/Navbar";
-import ShoeInfo from "../../components/shoe_info/ShoeInfo";
-import ShoeCard from "../../components/shoe_info/ShoeCard";
+import Navbar from "../../../components/header/Navbar";
+import ShoeInfo from "../../../components/shoe_info/ShoeInfo";
+import ShoeCard from "../../../components/shoe_info/ShoeCard";
 
 import {
   converse1,
@@ -13,9 +13,9 @@ import {
   converse7,
   converse8,
   converse9,
-} from "../../components/populares/data";
+} from "../../../components/populares/data";
 
-const converse = () => {
+const Converse = () => {
   return (
     <>
       <Head>
@@ -91,4 +91,4 @@ const converse = () => {
   );
 };
 
-export default converse;
+export default Converse;

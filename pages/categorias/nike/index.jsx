@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Navbar from "../../components/header/Navbar";
+import Navbar from "../../../components/header/Navbar";
 import { SiNike } from "react-icons/si";
-import ShoeInfo from "../../components/shoe_info/ShoeInfo";
-import ShoeCard from "../../components/shoe_info/ShoeCard";
+import ShoeInfo from "../../../components/shoe_info/ShoeInfo";
+import ShoeCard from "../../../components/shoe_info/ShoeCard";
 
 import {
   nike1,
@@ -15,7 +15,7 @@ import {
   nike8,
   nike9,
   nike10,
-} from "../../components/populares/data";
+} from "../../../components/populares/data";
 
 const Nike = () => {
   return (
@@ -69,22 +69,22 @@ const Nike = () => {
               nombre={nike6.nombre}
               precio={nike6.precio}
             />
-             <ShoeCard
+            <ShoeCard
               img={nike7.img}
               nombre={nike7.nombre}
               precio={nike7.precio}
             />
-             <ShoeCard
+            <ShoeCard
               img={nike8.img}
               nombre={nike8.nombre}
               precio={nike8.precio}
             />
-             <ShoeCard
+            <ShoeCard
               img={nike9.img}
               nombre={nike9.nombre}
               precio={nike9.precio}
             />
-             <ShoeCard
+            <ShoeCard
               img={nike10.img}
               nombre={nike10.nombre}
               precio={nike10.precio}

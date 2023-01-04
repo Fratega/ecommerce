@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Navbar from "../../components/header/Navbar";
+import Navbar from "../../../components/header/Navbar";
 import { SiJordan } from "react-icons/si";
-import ShoeInfo from "../../components/shoe_info/ShoeInfo";
-import ShoeCard from "../../components/shoe_info/ShoeCard";
+import ShoeInfo from "../../../components/shoe_info/ShoeInfo";
+import ShoeCard from "../../../components/shoe_info/ShoeCard";
 
-import {jordan1, jordan2, jordan3, jordan4, jordan5, jordan6, jordan7, jordan8, jordan9, jordan10} from "../../components/populares/data"
+import {jordan1, jordan2, jordan3, jordan4, jordan5, jordan6, jordan7, jordan8, jordan9, jordan10} from "../../../components/populares/data"
 
 const Jordan = () => {
   return (

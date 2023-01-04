@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Navbar from "../../components/header/Navbar";
+import Navbar from "../../../components/header/Navbar";
 import { SiFila } from "react-icons/si";
-import ShoeInfo from "../../components/shoe_info/ShoeInfo";
-import ShoeCard from "../../components/shoe_info/ShoeCard";
+import ShoeInfo from "../../../components/shoe_info/ShoeInfo";
+import ShoeCard from "../../../components/shoe_info/ShoeCard";
 
-import {fila1, fila2, fila3, fila4, fila5, fila6, fila7, fila8, fila9, fila10} from "../../components/populares/data"
+import {fila1, fila2, fila3, fila4, fila5, fila6, fila7, fila8, fila9, fila10} from "../../../components/populares/data"
 
 
 const Fila = () => {

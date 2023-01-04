@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Navbar from "../../components/header/Navbar";
-import ShoeInfo from "../../components/shoe_info/ShoeInfo";
-import ShoeCard from "../../components/shoe_info/ShoeCard";
+import Navbar from "../../../components/header/Navbar";
+import ShoeInfo from "../../../components/shoe_info/ShoeInfo";
+import ShoeCard from "../../../components/shoe_info/ShoeCard";
 
-import {yeezy1, yeezy2, yeezy3, yeezy4, yeezy5} from "../../components/populares/data"
+import {yeezy1, yeezy2, yeezy3, yeezy4, yeezy5} from "../../../components/populares/data"
 
 const Yeezy = () => {
   return (

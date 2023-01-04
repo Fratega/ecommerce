@@ -1,11 +1,21 @@
-import React from "react";
 import Head from "next/head";
+import Navbar from "../../../components/header/Navbar";
 import { SiAdidas } from "react-icons/si";
-import Navbar from "../../components/header/Navbar";
-import ShoeInfo from "../../components/shoe_info/ShoeInfo";
-import ShoeCard from "../../components/shoe_info/ShoeCard";
+import ShoeInfo from "../../../components/shoe_info/ShoeInfo";
+import ShoeCard from "../../../components/shoe_info/ShoeCard";
 
-import {adidas1, adidas2, adidas3, adidas4, adidas5, adidas6, adidas7, adidas8, adidas9, adidas10} from "../../components/populares/data"
+import {
+  adidas1,
+  adidas2,
+  adidas3,
+  adidas4,
+  adidas5,
+  adidas6,
+  adidas7,
+  adidas8,
+  adidas9,
+  adidas10,
+} from "../../../components/populares/data";
 
 const Adidas = () => {
   return (
@@ -55,27 +65,27 @@ const Adidas = () => {
                 nombre={adidas5.nombre}
                 precio={adidas5.precio}
               />
-               <ShoeCard
+              <ShoeCard
                 img={adidas6.img}
                 nombre={adidas6.nombre}
                 precio={adidas6.precio}
               />
-               <ShoeCard
+              <ShoeCard
                 img={adidas7.img}
                 nombre={adidas7.nombre}
                 precio={adidas7.precio}
               />
-               <ShoeCard
+              <ShoeCard
                 img={adidas8.img}
                 nombre={adidas8.nombre}
                 precio={adidas8.precio}
               />
-               <ShoeCard
+              <ShoeCard
                 img={adidas9.img}
                 nombre={adidas9.nombre}
                 precio={adidas9.precio}
               />
-               <ShoeCard
+              <ShoeCard
                 img={adidas10.img}
                 nombre={adidas10.nombre}
                 precio={adidas10.precio}
