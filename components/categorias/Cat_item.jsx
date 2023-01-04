@@ -17,6 +17,7 @@ const Cat_item = ({ titulo, img1, img2, img3, img4, direccion }) => {
             src={img1}
             alt=""
             fill
+            placeholder="blur"
             className="rounded-xl object-cover object-center"
           />
         </div>
@@ -26,6 +27,7 @@ const Cat_item = ({ titulo, img1, img2, img3, img4, direccion }) => {
             src={img2}
             alt=""
             fill
+            placeholder="blur"
             className="rounded-xl object-cover object-center"
           />
         </div>
@@ -35,6 +37,7 @@ const Cat_item = ({ titulo, img1, img2, img3, img4, direccion }) => {
             src={img3}
             alt=""
             fill
+            placeholder="blur"
             className="rounded-xl object-cover object-center"
           />
         </div>
@@ -44,6 +47,7 @@ const Cat_item = ({ titulo, img1, img2, img3, img4, direccion }) => {
             src={img4}
             alt=""
             fill
+            placeholder="blur"
             className="rounded-xl object-cover object-center"
           />
         </div>

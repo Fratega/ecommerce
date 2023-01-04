@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section>
       {/* Image and text container */}
-      <div className="flex flex-col w-[90%] h-[70vh] relative mx-auto items-center justify-center md:h-[42rem] lg:h-[85vh]">
+      <div className="flex flex-col w-11/12 h-[70vh] relative mx-auto items-center justify-center md:h-[42rem] lg:h-[85vh]">
         <Image
           src={img}
           alt=""
