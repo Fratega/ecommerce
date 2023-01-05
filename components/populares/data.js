@@ -194,119 +194,125 @@ export const adidas = [
     },
 ]
 
-export const fila1 = {
-  nombre: "Fila 1",
-  precio: 20,
-  img: fila_img_1,
-};
+export const fila = [
+  {
+    id: 1,
+    nombre: "Fila 1",
+    precio: 70,
+    img: fila_img_1
+  },
+  {
+    id: 2,
+    nombre: "Fila 2",
+    precio: 110,
+    img: fila_img_2
+  },
+  {
+    id: 3,
+    nombre: "Fila 3",
+    precio: 120,
+    img: fila_img_3
+  },
+  {
+    id: 4,
+    nombre: "Fila 4",
+    precio: 150,
+    img: fila_img_4
+  },
+  {
+    id: 5,
+    nombre: "Fila 5",
+    precio: 130,
+    img: fila_img_5
+  },
+  {
+    id: 6,
+    nombre: "Fila 6",
+    precio: 120,
+    img: fila_img_6
+  },
+  {
+    id: 7,
+    nombre: "Fila 7",
+    precio: 110,
+    img: fila_img_7
+  },
+  {
+    id: 8,
+    nombre: "Fila 8",
+    precio: 150,
+    img: fila_img_8
+  },
+  {
+    id: 9,
+    nombre: "Fila 9",
+    precio: 120,
+    img: fila_img_9
+  },
+  {
+    id: 10,
+    nombre: "Fila 10",
+    precio: 150,
+    img: fila_img_10
+  },
+]
 
-export const fila2 = {
-  nombre: "Fila 2",
-  precio: 30,
-  img: fila_img_2,
-};
-
-export const fila3 = {
-  nombre: "Fila 3",
-  precio: 40,
-  img: fila_img_3,
-};
-
-export const fila4 = {
-  nombre: "Fila 4",
-  precio: 50,
-  img: fila_img_4,
-};
-
-export const fila5 = {
-  nombre: "Fila 5",
-  precio: 60,
-  img: fila_img_5,
-};
-
-export const fila6 = {
-  nombre: "Fila 6",
-  precio: 70,
-  img: fila_img_6,
-};
-
-export const fila7 = {
-  nombre: "Fila 7",
-  precio: 80,
-  img: fila_img_7,
-};
-
-export const fila8 = {
-  nombre: "Fila 8",
-  precio: 90,
-  img: fila_img_8,
-};
-
-export const fila9 = {
-  nombre: "Fila 9",
-  precio: 100,
-  img: fila_img_9,
-};
-
-export const fila10 = {
-  nombre: "Fila 10",
-  precio: 110,
-  img: fila_img_10,
-};
-
-export const converse1 = {
-  nombre: "Converse All-star",
-  precio: 35,
-  img: converse_img_1,
-};
-
-export const converse2 = {
-  nombre: "Converse 2",
-  precio: 50,
-  img: converse_img_2,
-};
-
-export const converse3 = {
-  nombre: "Converse 3",
-  precio: 60,
-  img: converse_img_3,
-};
-
-export const converse4 = {
-  nombre: "Converse 4",
-  precio: 70,
-  img: converse_img_4,
-};
-
-export const converse5 = {
-  nombre: "Converse 5",
-  precio: 50,
-  img: converse_img_5,
-};
-
-export const converse6 = {
-  nombre: "Converse 6",
-  precio: 90,
-  img: converse_img_6,
-};
-
-export const converse7 = {
-  nombre: "Converse 7",
-  precio: 100,
-  img: converse_img_7,
-};
-
-export const converse8 = {
-  nombre: "Converse 8",
-  precio: 120,
-  img: converse_img_8,
-};
-
-export const converse9 = {
-  nombre: "Converse 9",
-  precio: 80,
-  img: converse_img_9,
-};
+export const converse = [
+  {
+    id: 1,
+    nombre: "Converse 1",
+    precio: 110,
+    img: converse_img_1
+  },
+  {
+    id: 2,
+    nombre: "Converse 2",
+    precio: 120,
+    img: converse_img_2
+  },
+  {
+    id: 3,
+    nombre: "Converse 3",
+    precio: 130,
+    img: converse_img_3
+  },
+  {
+    id: 4,
+    nombre: "Converse 4",
+    precio: 160,
+    img: converse_img_4
+  },
+  {
+    id: 5,
+    nombre: "Converse 5",
+    precio: 170,
+    img: converse_img_5
+  },
+  {
+    id: 6,
+    nombre: "Converse 6",
+    precio: 180,
+    img: converse_img_6
+  },
+  {
+    id: 7,
+    nombre: "Converse 7",
+    precio: 90,
+    img: converse_img_7
+  },
+  {
+    id: 8,
+    nombre: "Converse 8",
+    precio: 120,
+    img: converse_img_8
+  },
+  {
+    id: 9,
+    nombre: "Converse 9",
+    precio: 150,
+    img: converse_img_9
+  }
+]
 
 export const jordan = [
   {
@@ -371,32 +377,41 @@ export const jordan = [
   },
 ];
 
-export const yeezy1 = {
-  nombre: "Yeezy 350z",
-  precio: 99.99,
-  img: yeezy_img_1,
-};
-
-export const yeezy2 = {
-  nombre: "Yeezy 2",
-  precio: 150,
-  img: yeezy_img_2,
-};
-
-export const yeezy3 = {
-  nombre: "Yeezy 3",
-  precio: 160,
-  img: yeezy_img_3,
-};
-
-export const yeezy4 = {
-  nombre: "Yeezy 4",
-  precio: 200,
-  img: yeezy_img_4,
-};
-
-export const yeezy5 = {
-  nombre: "Yeezy 5",
-  precio: 300,
-  img: yeezy_img_5,
-};
+export const yeezy = [
+  {
+    id: 1,
+    nombre: "Yeezy 1",
+    precio: 120,
+    img: yeezy_img_1
+  },
+  {
+    id: 2,
+    nombre: "Yeezy 2",
+    precio: 140,
+    img: yeezy_img_2
+  },
+  {
+    id: 3,
+    nombre: "Yeezy 3",
+    precio: 130,
+    img: yeezy_img_3
+  },
+  {
+    id: 4,
+    nombre: "Yeezy 4",
+    precio: 150,
+    img: yeezy_img_4
+  },
+  {
+    id: 5,
+    nombre: "Yeezy 5",
+    precio: 140,
+    img: yeezy_img_5
+  },
+  {
+    id: 6,
+    nombre: "Yeezy 6",
+    precio: 180,
+    img: yeezy_img_6
+  },
+]

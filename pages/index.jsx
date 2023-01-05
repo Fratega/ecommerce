@@ -7,10 +7,11 @@ import Grid from "../components/grid/Grid";
 // Importando datos de los zapatos
 import {
   nike,
-  converse1,
+  converse,
   adidas,
   jordan,
-  yeezy1,
+  yeezy,
+  fila
 } from "../components/populares/data";
 
 import HotDot from "../components/populares/HotDot";
@@ -47,18 +48,18 @@ export default function Home() {
           <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10  lg:w-[80%] lg:gap-x-10 2xl:gap-y-16">
             <div className="relative">
               <SneakerCard
-                img={nike[0].img}
-                titulo={nike[0].nombre}
-                precio={`$${nike[0].precio}`}
+                img={fila[0].img}
+                titulo={fila[0].nombre}
+                precio={`$${fila[0].precio}`}
               />
               <div className="absolute -top-[1rem] -right-[1rem]">
                 <HotDot />
               </div>
             </div>
             <SneakerCard
-              img={converse1.img}
-              titulo={converse1.nombre}
-              precio={`$${converse1.precio}`}
+              img={converse[1].img}
+              titulo={converse[1].nombre}
+              precio={`$${converse[1].precio}`}
             />
             <div className="relative">
               <SneakerCard
@@ -92,9 +93,9 @@ export default function Home() {
             />
             <div className="relative">
               <SneakerCard
-                img={yeezy1.img}
-                titulo={yeezy1.nombre}
-                precio={`$${yeezy1.precio}`}
+                img={yeezy[1].img}
+                titulo={yeezy[1].nombre}
+                precio={`$${yeezy[1].precio}`}
               />
 
               <div className="absolute -top-[1rem] -right-[1rem]">
