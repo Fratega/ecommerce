@@ -33,6 +33,7 @@ const Fila = () => {
                 nombre={zapato.nombre}
                 precio={zapato.precio}
                 img={zapato.img}
+                to={`fila/${zapato.id}`}
               />
             ))}
           </div>
