@@ -13,7 +13,7 @@ import {
   adidas,
   jordan,
   yeezy,
-  fila
+  fila,
 } from "../components/populares/data";
 
 import HotDot from "../components/populares/HotDot";
@@ -53,6 +53,7 @@ export default function Home() {
                 img={fila[0].img}
                 titulo={fila[0].nombre}
                 precio={`$${fila[0].precio}`}
+                to={`/categorias/fila/${fila[0].id}`}
               />
               <div className="absolute -top-[1rem] -right-[1rem]">
                 <HotDot />
@@ -62,12 +63,14 @@ export default function Home() {
               img={converse[1].img}
               titulo={converse[1].nombre}
               precio={`$${converse[1].precio}`}
+              to={`/categorias/converse/${converse[1].id}`}
             />
             <div className="relative">
               <SneakerCard
                 img={jordan[4].img}
                 titulo={jordan[4].nombre}
                 precio={`$${jordan[4].precio}`}
+                to={`/categorias/jordan/${jordan[4].id}`}
               />
               <div className="absolute -top-[1rem] -right-[1rem]">
                 <HotDot />
@@ -77,27 +80,32 @@ export default function Home() {
               img={jordan[5].img}
               titulo={jordan[5].nombre}
               precio={`$${jordan[5].precio}`}
+              to={`/categorias/jordan/${jordan[5].id}`}
             />
             <SneakerCard
               img={adidas[4].img}
               titulo={adidas[4].nombre}
               precio={`$${adidas[4].precio}`}
+              to={`/categorias/adidas/${adidas[4].id}`}
             />
             <SneakerCard
               img={nike[1].img}
               titulo={nike[1].nombre}
               precio={`$${nike[1].precio}`}
+              to={`/categorias/nike/${nike[1].id}`}
             />
             <SneakerCard
               img={nike[2].img}
               titulo={nike[2].nombre}
               precio={`$${nike[2].precio}`}
+              to={`/categorias/nike/${nike[2].id}`}
             />
             <div className="relative">
               <SneakerCard
                 img={yeezy[1].img}
                 titulo={yeezy[1].nombre}
                 precio={`$${yeezy[1].precio}`}
+                to={`/categorias/yeezy/${yeezy[1].id}`}
               />
 
               <div className="absolute -top-[1rem] -right-[1rem]">

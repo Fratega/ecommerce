@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Navbar from "../../../components/header/Navbar";
 
-import { jordan1, jordanos, people } from "../../../components/populares/data";
+import { jordan } from "../../../components/populares/data";
 
 const ShoeId = () => {
   const router = useRouter();
