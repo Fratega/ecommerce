@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const LastShoe = ({ ruta, foto }) => {
   return (
-    <section>
+    <article>
       <div className="flex w-11/12 h-[45vh] relative  mx-auto my-5 items-start justify-center">
         <Image
           src={foto}
@@ -26,7 +26,7 @@ const LastShoe = ({ ruta, foto }) => {
           </Link>
         </div>
       </div>
-    </section>
+    </article>
   );
 };
 
