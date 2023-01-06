@@ -4,7 +4,7 @@ import Hero from "../components/hero/Hero";
 import SneakerCard from "../components/populares/SneakerCard";
 import Grid from "../components/grid/Grid";
 import LastShoe from "../components/lastshoe/LastShoe";
-import Nike21 from "../public/img/cat-nike/Nike21.png";
+import Nike21 from "../public/img/cat-nike/kobe 1.png";
 
 // Importando datos de los zapatos
 import {
@@ -113,9 +113,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
           {/* Ultima carta */}
           <LastShoe foto={Nike21} ruta="/categorias" />
-        </section>
       </main>
     </>
   );

@@ -4,27 +4,16 @@ import Link from "next/link";
 
 const LastShoe = ({ ruta, foto }) => {
   return (
-    <article>
-      <div className="flex w-11/12 h-[45vh] relative  mx-auto my-5 items-start justify-center">
-        <Image
-          src={foto}
-          alt=""
-          placeholder="blur"
-          fill
-          priority
-          className="object-cover"
-        />
-        {/* Texto de la imagen */}
-        <div className="flex flex-col items-center absolute gap-1 text-black ">
-          <h2 className="font-bold text-2xl">Encuentra tu calzado ideal</h2>
-          <h3 className="text-xl">Lorem ostia chaval</h3>
-          <Link
-            href={ruta}
-            className="bg-black text-white py-2 px-6 text-lg rounded-xl transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-100"
-          >
-            Ver todos
-          </Link>
-        </div>
+    <article className="w-11/12 mx-auto bg-primary-100 p-5 flex flex-col gap-2 lg:flex-row lg:justify-center items-center">
+      <div className="flex flex-col items-center gap-2 lg:items-start">
+        <h2 className="text-3xl font-bold">Encuentra tu calzado ideal</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <Link href={ruta} className='bg-black text-white py-2 px-6 rounded-xl bottom-3 right-3 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110'>Ver más</Link>
+      </div>
+      <div>
+        <Image src={foto} alt="" />
       </div>
     </article>
   );
