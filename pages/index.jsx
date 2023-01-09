@@ -5,6 +5,9 @@ import SneakerCard from "../components/populares/SneakerCard";
 import Grid from "../components/grid/Grid";
 import LastShoe from "../components/lastshoe/LastShoe";
 import Nike21 from "../public/img/cat-nike/kobe 1.png";
+import HotDot from "../components/populares/HotDot";
+import DashIcons from "../components/dashicons/DashIcons";
+import LastItem from "../components/lastitem/LastItem";
 
 // Importando datos de los zapatos
 import {
@@ -15,8 +18,6 @@ import {
   yeezy,
   fila,
 } from "../components/populares/data";
-
-import HotDot from "../components/populares/HotDot";
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Grid />
-
+        <DashIcons />
         {/* Sneakers populares  */}
         <section>
           {/* Titulo  */}
@@ -114,10 +115,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         {/* Ultima carta */}
         <LastShoe foto={Nike21} ruta="/categorias" />
       </main>
+      <footer>
+        <LastItem />
+      </footer>
     </>
   );
 }
