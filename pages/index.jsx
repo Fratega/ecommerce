@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Main  */}
-      <main>
+      <main className="flex flex-col gap-5">
         <Navbar />
         <Hero />
         <Grid />
@@ -36,8 +36,8 @@ export default function Home() {
         {/* Sneakers populares  */}
         <section>
           {/* Titulo  */}
-          <div className="w-11/12 mx-auto text-center my-8">
-            <h2 className="font-bold text-4xl lg:text-5xl">
+          <div className="w-11/12 mx-auto text-center mb-8">
+            <h2 className="font-bold text-3xl lg:text-5xl">
               Sneakers populares
             </h2>
             <p className="text-neutral-400">
@@ -114,8 +114,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-          {/* Ultima carta */}
-          <LastShoe foto={Nike21} ruta="/categorias" />
+
+        {/* Ultima carta */}
+        <LastShoe foto={Nike21} ruta="/categorias" />
       </main>
     </>
   );
