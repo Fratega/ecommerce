@@ -1,22 +1,22 @@
 import Head from "next/head";
 import Navbar from "../components/header/Navbar";
 import Hero from "../components/hero/Hero";
-import SneakerCard from "../components/populares/SneakerCard";
+import ShoeCard from "../components/shoe_info/ShoeCard";
 import Grid from "../components/grid/Grid";
+import LastShoe from "../components/lastshoe/LastShoe";
+import Nike21 from "../public/img/cat-nike/kobe 1.png";
+import HotDot from "../components/populares/HotDot";
+import LastItem from "../components/lastitem/LastItem";
 
 // Importando datos de los zapatos
 import {
-  nike1,
-  nike2,
-  nike3,
-  converse1,
-  jordan1,
-  jordan2,
-  jordan3,
-  yeezy1,
+  nike,
+  converse,
+  adidas,
+  jordan,
+  yeezy,
+  fila,
 } from "../components/populares/data";
-
-import HotDot from "../components/populares/HotDot";
 
 export default function Home() {
   return (
@@ -27,17 +27,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       {/* Main  */}
       <main>
-        <Navbar />
         <Hero />
         <Grid />
-
         {/* Sneakers populares  */}
-        <section>
+        <section className="my-[3rem] lg:my-[4.5rem] 2xl:my-[6rem]">
           {/* Titulo  */}
-          <div className="w-11/12 mx-auto text-center my-8">
-            <h2 className="font-bold text-4xl lg:text-5xl">
+          <div className="w-11/12 mx-auto text-center mb-8">
+            <h2 className="font-bold text-3xl lg:text-5xl">
               Sneakers populares
             </h2>
             <p className="text-neutral-400">
@@ -47,57 +46,65 @@ export default function Home() {
           </div>
 
           {/* Grid de Sneakers Populares */}
-          <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10  lg:w-[80%] lg:gap-x-10 2xl:gap-y-16">
+          <div className="w-11/12 mx-auto grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 lg:w-[75%]">
             <div className="relative">
-              <SneakerCard
-                img={nike1.img}
-                titulo={nike1.nombre}
-                precio={`$${nike1.precio}`}
+              <ShoeCard
+                img={fila[0].img}
+                nombre={fila[0].nombre}
+                precio={`$${fila[0].precio}`}
+                to={`/categorias/fila/${fila[0].id}`}
               />
               <div className="absolute -top-[1rem] -right-[1rem]">
                 <HotDot />
               </div>
             </div>
-            <SneakerCard
-              img={converse1.img}
-              titulo={converse1.nombre}
-              precio={`$${converse1.precio}`}
+            <ShoeCard
+              img={converse[1].img}
+              nombre={converse[1].nombre}
+              precio={`$${converse[1].precio}`}
+              to={`/categorias/converse/${converse[1].id}`}
             />
             <div className="relative">
-              <SneakerCard
-                img={jordan1.img}
-                titulo={jordan1.nombre}
-                precio={`$${jordan1.precio}`}
+              <ShoeCard
+                img={jordan[4].img}
+                nombre={jordan[4].nombre}
+                precio={`$${jordan[4].precio}`}
+                to={`/categorias/jordan/${jordan[4].id}`}
               />
               <div className="absolute -top-[1rem] -right-[1rem]">
                 <HotDot />
               </div>
             </div>
-            <SneakerCard
-              img={jordan2.img}
-              titulo={jordan2.nombre}
-              precio={`$${jordan2.precio}`}
+            <ShoeCard
+              img={jordan[5].img}
+              nombre={jordan[5].nombre}
+              precio={`$${jordan[5].precio}`}
+              to={`/categorias/jordan/${jordan[5].id}`}
             />
-            <SneakerCard
-              img={jordan3.img}
-              titulo={jordan3.nombre}
-              precio={`$${jordan3.precio}`}
+            <ShoeCard
+              img={adidas[4].img}
+              nombre={adidas[4].nombre}
+              precio={`$${adidas[4].precio}`}
+              to={`/categorias/adidas/${adidas[4].id}`}
             />
-            <SneakerCard
-              img={nike2.img}
-              titulo={nike2.nombre}
-              precio={`$${nike2.precio}`}
+            <ShoeCard
+              img={nike[1].img}
+              nombre={nike[1].nombre}
+              precio={`$${nike[1].precio}`}
+              to={`/categorias/nike/${nike[1].id}`}
             />
-            <SneakerCard
-              img={nike3.img}
-              titulo={nike3.nombre}
-              precio={`$${nike3.precio}`}
+            <ShoeCard
+              img={nike[2].img}
+              nombre={nike[2].nombre}
+              precio={`$${nike[2].precio}`}
+              to={`/categorias/nike/${nike[2].id}`}
             />
             <div className="relative">
-              <SneakerCard
-                img={yeezy1.img}
-                titulo={yeezy1.nombre}
-                precio={`$${yeezy1.precio}`}
+              <ShoeCard
+                img={yeezy[1].img}
+                nombre={yeezy[1].nombre}
+                precio={`$${yeezy[1].precio}`}
+                to={`/categorias/yeezy/${yeezy[1].id}`}
               />
 
               <div className="absolute -top-[1rem] -right-[1rem]">
@@ -106,7 +113,11 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Calzado ideal */}
+        <LastShoe foto={Nike21} ruta="/categorias" />
       </main>
+      <LastItem />
     </>
   );
 }
