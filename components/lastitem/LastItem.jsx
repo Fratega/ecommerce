@@ -4,13 +4,12 @@ import Firma from "../../public/img/firma/firma.png"
 
 const LastItem = () => {
   return (
-    <div className="bg-black p-10 mt-8">
+    <footer className="bg-black p-10 mt-[3rem] flex items-center justify-center">
       <Image
         src={Firma}
         alt=""
-        classname=""
       />
-    </div>
+    </footer>
   );
 };
 

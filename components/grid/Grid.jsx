@@ -1,12 +1,12 @@
 import React from "react";
-import Link from "next/link";
 import GridItem from "./GridItem";
-import jordan from "../../public/img/cat-jordan/jordan.webp"
-import nike from "../../public/img/cat-nike/nike 3.webp"
-import adidas from "../../public/img/cat-adidas/adidas.webp"
-import yeezy from "../../public/img/cat-yeezy/yeezy.jpg"
-import converse from "../../public/img/cat-converse/converse.jpg"
-import fila from "../../public/img/cat-fila/fila.jpg"
+import jordan from "../../public/img/cat-jordan/jordan.webp";
+import nike from "../../public/img/cat-nike/nike 3.webp";
+import adidas from "../../public/img/cat-adidas/adidas.webp";
+import yeezy from "../../public/img/cat-yeezy/yeezy.jpg";
+import converse from "../../public/img/cat-converse/converse.jpg";
+import fila from "../../public/img/cat-fila/fila.jpg";
+import IconCard from "./IconCard";
 
 const Grid = () => {
   return (
@@ -17,9 +17,16 @@ const Grid = () => {
         <GridItem foto={nike} nombre="Nike" ruta="/categorias/nike" />
         <GridItem foto={adidas} nombre="Adidas" ruta="/categorias/adidas" />
         <GridItem foto={yeezy} nombre="Yeezy" ruta="/categorias/yeezy" />
-        <GridItem foto={converse} nombre="Converse" ruta="/categorias/converse" />
+        <GridItem
+          foto={converse}
+          nombre="Converse"
+          ruta="/categorias/converse"
+        />
         <GridItem foto={fila} nombre="Fila" ruta="/categorias/fila" />
       </div>
+
+      {/* Icons  */}
+      <IconCard />
     </section>
   );
 };

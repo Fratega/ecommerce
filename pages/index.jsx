@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Navbar from "../components/header/Navbar";
 import Hero from "../components/hero/Hero";
-import SneakerCard from "../components/populares/SneakerCard";
+import ShoeCard from "../components/shoe_info/ShoeCard";
 import Grid from "../components/grid/Grid";
 import LastShoe from "../components/lastshoe/LastShoe";
 import Nike21 from "../public/img/cat-nike/kobe 1.png";
 import HotDot from "../components/populares/HotDot";
-import DashIcons from "../components/dashicons/DashIcons";
 import LastItem from "../components/lastitem/LastItem";
 
 // Importando datos de los zapatos
@@ -28,14 +27,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       {/* Main  */}
-      <main className="flex flex-col gap-5">
-        <Navbar />
+      <main>
         <Hero />
         <Grid />
-        <DashIcons />
         {/* Sneakers populares  */}
-        <section>
+        <section className="my-[3rem] lg:my-[4.5rem] 2xl:my-[6rem]">
           {/* Titulo  */}
           <div className="w-11/12 mx-auto text-center mb-8">
             <h2 className="font-bold text-3xl lg:text-5xl">
@@ -48,11 +46,11 @@ export default function Home() {
           </div>
 
           {/* Grid de Sneakers Populares */}
-          <div className="w-11/12 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10  lg:w-[80%] lg:gap-x-10 2xl:gap-y-16">
+          <div className="w-11/12 mx-auto grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 lg:w-[75%]">
             <div className="relative">
-              <SneakerCard
+              <ShoeCard
                 img={fila[0].img}
-                titulo={fila[0].nombre}
+                nombre={fila[0].nombre}
                 precio={`$${fila[0].precio}`}
                 to={`/categorias/fila/${fila[0].id}`}
               />
@@ -60,16 +58,16 @@ export default function Home() {
                 <HotDot />
               </div>
             </div>
-            <SneakerCard
+            <ShoeCard
               img={converse[1].img}
-              titulo={converse[1].nombre}
+              nombre={converse[1].nombre}
               precio={`$${converse[1].precio}`}
               to={`/categorias/converse/${converse[1].id}`}
             />
             <div className="relative">
-              <SneakerCard
+              <ShoeCard
                 img={jordan[4].img}
-                titulo={jordan[4].nombre}
+                nombre={jordan[4].nombre}
                 precio={`$${jordan[4].precio}`}
                 to={`/categorias/jordan/${jordan[4].id}`}
               />
@@ -77,34 +75,34 @@ export default function Home() {
                 <HotDot />
               </div>
             </div>
-            <SneakerCard
+            <ShoeCard
               img={jordan[5].img}
-              titulo={jordan[5].nombre}
+              nombre={jordan[5].nombre}
               precio={`$${jordan[5].precio}`}
               to={`/categorias/jordan/${jordan[5].id}`}
             />
-            <SneakerCard
+            <ShoeCard
               img={adidas[4].img}
-              titulo={adidas[4].nombre}
+              nombre={adidas[4].nombre}
               precio={`$${adidas[4].precio}`}
               to={`/categorias/adidas/${adidas[4].id}`}
             />
-            <SneakerCard
+            <ShoeCard
               img={nike[1].img}
-              titulo={nike[1].nombre}
+              nombre={nike[1].nombre}
               precio={`$${nike[1].precio}`}
               to={`/categorias/nike/${nike[1].id}`}
             />
-            <SneakerCard
+            <ShoeCard
               img={nike[2].img}
-              titulo={nike[2].nombre}
+              nombre={nike[2].nombre}
               precio={`$${nike[2].precio}`}
               to={`/categorias/nike/${nike[2].id}`}
             />
             <div className="relative">
-              <SneakerCard
+              <ShoeCard
                 img={yeezy[1].img}
-                titulo={yeezy[1].nombre}
+                nombre={yeezy[1].nombre}
                 precio={`$${yeezy[1].precio}`}
                 to={`/categorias/yeezy/${yeezy[1].id}`}
               />
@@ -115,12 +113,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* Ultima carta */}
+
+        {/* Calzado ideal */}
         <LastShoe foto={Nike21} ruta="/categorias" />
       </main>
-      <footer>
-        <LastItem />
-      </footer>
+      <LastItem />
     </>
   );
 }
