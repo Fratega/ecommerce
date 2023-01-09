@@ -35,7 +35,7 @@ const Adidas = () => {
                   nombre={shoe.nombre}
                   precio={shoe.precio}
                   img={shoe.img}
-                  to={`adidas/${zapato.id}`}
+                  to={`adidas/${shoe.id}`}
                 />
               ))}
             </div>
