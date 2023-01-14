@@ -5,6 +5,7 @@ import Navbar from "../../../components/header/Navbar";
 
 import { jordan } from "../../../components/populares/data";
 
+
 export async function getStaticPaths() {
   const paths = jordan.map((shoe) => ({
     params: { id: shoe.id.toString() },
@@ -23,11 +24,11 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const ShoeId = ({item}) => {
+const ShoeId = ({ item }) => {
   return (
     <>
       <Head>
-        <title>página dinamica</title>
+        <title>{`Detalles de ${item.nombre}`}</title>
       </Head>
       <Navbar />
 
