@@ -31,7 +31,7 @@ const Converse = () => {
                 nombre={shoe.nombre}
                 precio={shoe.precio}
                 img={shoe.img}
-                to={`converse/${zapato.id}`}
+                to={`converse/${shoe.id}`}
               />
             ))}
           </div>
