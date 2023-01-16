@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { jordan } from "../../../components/populares/data";
+import { fila } from "../../../components/populares/data";
 import Tallas from "../../../components/details/Tallas";
 import Contador from "../../../components/details/Contador";
 
 export async function getStaticPaths() {
-  const paths = jordan.map((shoe) => ({
+  const paths = fila.map((shoe) => ({
     params: { id: shoe.id.toString() },
   }));
 
@@ -17,20 +17,21 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const item = jordan.find((i) => i.id === Number(params.id));
+  const item = fila.find((i) => i.id === Number(params.id));
   return {
     props: { item },
   };
 }
 
-const ShoeId = ({ item }) => {
+const ShoeId = ({item}) => {
   return (
     <>
-      <Head>
+    <Head>
         <title>{`Detalles de ${item.nombre}`}</title>
-      </Head>
+    </Head>
 
-      <main>
+    
+    <main>
         <section className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen lg:items-center">
           {/* Contenedor del zapato  */}
           <div className="bg-slate-100 flex items-center justify-center h-[30rem] p-3 lg:h-full">
@@ -81,7 +82,7 @@ const ShoeId = ({ item }) => {
         </section>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default ShoeId;
+export default ShoeId
