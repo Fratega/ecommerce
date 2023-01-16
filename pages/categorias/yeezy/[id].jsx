@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { jordan } from "../../../components/populares/data";
+import { yeezy } from "../../../components/populares/data";
 import Tallas from "../../../components/details/Tallas";
 import Contador from "../../../components/details/Contador";
 
 export async function getStaticPaths() {
-  const paths = jordan.map((shoe) => ({
+  const paths = yeezy.map((shoe) => ({
     params: { id: shoe.id.toString() },
   }));
 
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const item = jordan.find((i) => i.id === Number(params.id));
+  const item = yeezy.find((i) => i.id === Number(params.id));
   return {
     props: { item },
   };
@@ -76,7 +76,9 @@ const ShoeId = ({ item }) => {
             </div>
 
             {/* Carrito  */}
-            <button className="bg-black text-white py-4 text-2xl">Agregar al carrito</button>
+            <button className="bg-black text-white py-4 text-2xl">
+              Agregar al carrito
+            </button>
           </div>
         </section>
       </main>
