@@ -24,6 +24,15 @@ export async function getStaticProps({ params }) {
 }
 
 const ShoeId = ({ item }) => {
+  const [number, setNumber] = React.useState(1);
+  function sumar() {
+    setNumber(number + 1);
+  }
+
+  function restar() {
+    number > 1 ? setNumber(number - 1) : null;
+  }
+
   return (
     <>
       <Head>
@@ -66,13 +75,27 @@ const ShoeId = ({ item }) => {
 
             {/* Precio  */}
             <div>
-              <p className="font-bold text-4xl">{`$${item.precio}`}</p>
+              <p className="font-bold text-4xl">{`$${item.precio * number}`}</p>
             </div>
 
             {/* Cantidad  */}
             <div className="flex flex-col gap-2">
-              <p className="text-xl font-bold">Cantidad:</p>
-              <Contador />
+              <p className="text-xl font-bold">Cantidad de pares:</p>
+              <div className="flex items-center gap-5">
+                <div
+                  onClick={sumar}
+                  className="border flex items-center justify-center h-[3rem] w-[3rem] text-2xl cursor-pointer"
+                >
+                  +
+                </div>
+                <p className="text-lg">{number}</p>
+                <div
+                  onClick={restar}
+                  className="border flex items-center justify-center h-[3rem] w-[3rem] text-2xl cursor-pointer"
+                >
+                  -
+                </div>
+              </div>
             </div>
 
             {/* Carrito  */}
