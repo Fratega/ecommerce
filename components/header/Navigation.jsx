@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import { AiOutlineClose } from "react-icons/ai";
 
 const Navigation = ({ trigger }) => {
   return (
@@ -13,6 +12,9 @@ const Navigation = ({ trigger }) => {
           </Link>
           <Link href="/categorias" onClick={trigger}>
             Categorias
+          </Link>
+          <Link href="/login" onClick={trigger}>
+            Iniciar sesión
           </Link>
         </div>
       </div>

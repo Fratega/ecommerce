@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/img/Logo.png";
 import { FiAlignJustify } from "react-icons/fi";
-import { ImSearch } from "react-icons/im";
 import { MdShoppingCart } from "react-icons/md";
+import { AiOutlineUser } from "react-icons/ai";
 import Link from "next/link";
 import Navigation from "./Navigation";
 
@@ -26,7 +26,9 @@ const Navbar = () => {
           <Link href="/categorias">Categorías</Link>
         </nav>
         <div className="hidden md:flex gap-3.5 text-2xl">
-          <ImSearch />
+          <Link href="/login">
+            <AiOutlineUser />
+          </Link>
           <MdShoppingCart />
         </div>
 
