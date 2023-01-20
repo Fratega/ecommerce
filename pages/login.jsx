@@ -3,13 +3,17 @@ import Head from "next/head";
 import Image from "next/image";
 import foto from "../public/img/login.jpg";
 import { FcGoogle } from "react-icons/fc";
+import { useRouter } from "next/router";
+import { getSession} from "next-auth/react";
 
 const Login = () => {
+  const router = useRouter();
+
   return (
     <>
-    <Head>
-      <title>Login de usuarios</title>
-    </Head>
+      <Head>
+        <title>Login de usuarios</title>
+      </Head>
       <main>
         <section className="grid grid-cols-1 lg:grid-cols-2 w-full h-screen">
           {/* Foto  */}
@@ -29,7 +33,10 @@ const Login = () => {
 
             <div className="w-full flex flex-col gap-9 lg:gap-6 2xl:gap-9">
               {/* Google btn  */}
-              <button className="relative flex items-center justify-center border border-slate-400 w-full py-4 text-lg transition-colors hover:bg-black hover:text-white hover:border-none">
+              <button
+                onClick={() => router.push("api/auth/signin/google")}
+                className="relative flex items-center justify-center border border-slate-400 w-full py-4 text-lg transition-colors hover:bg-black hover:text-white hover:border-none"
+              >
                 <FcGoogle className="text-4xl absolute top-[50%] left-1 -translate-y-[50%]" />
                 Iniciar sesión con Google
               </button>
@@ -98,5 +105,23 @@ const Login = () => {
     </>
   );
 };
+
+export async function getServerSideProps(context) {
+  const session = await getSession(context);
+
+  if (session)
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+
+
+  return {
+    props: { session },
+  };
+}
+
 
 export default Login;
