@@ -7,6 +7,7 @@ import LastShoe from "../components/lastshoe/LastShoe";
 import Nike21 from "../public/img/cat-nike/kobe 1.png";
 import HotDot from "../components/populares/HotDot";
 import LastItem from "../components/lastitem/LastItem";
+import { getSession, signOut } from "next-auth/react";
 
 // Importando datos de los zapatos
 import {
@@ -18,7 +19,7 @@ import {
   fila,
 } from "../components/populares/data";
 
-export default function Home() {
+export default function Home({ session }) {
   return (
     <>
       <Head>
@@ -28,6 +29,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      {session ? (
+        <div>
+          <p className="text-black">{session.user.name}</p>
+          <p className="text-black">{session.user.email}</p>
+          <button
+            onClick={() => signOut()}
+            className="bg-red-400 p-3 text-white"
+          >
+            Cerrar sesión
+          </button>
+        </div>
+      ) : null}
+
       {/* Main  */}
       <main>
         <Hero />
@@ -120,4 +134,11 @@ export default function Home() {
       <LastItem />
     </>
   );
+}
+
+export async function getServerSideProps(context) {
+  const session = await getSession(context);
+  return {
+    props: { session },
+  };
 }
